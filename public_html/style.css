@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+main, header, aside, article, footer, nav{
+    border: 2px solid gray;
+    padding: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        "h h h"
+        "n a s"
+        "n a s"
+        "f f f";
+    max-width: 1000px;
+    margin: auto;
+}
+aside {
+    grid-area: s;
+    max-width: 300px;
+    background-color: lightcyan;
+}
+article{
+    grid-area: a;
+    max-width: 500px;
+    background-color: lightsalmon;
+    text-align: right;
+}
+header{
+    grid-area: h;
+    background-color: lightseagreen;
+}
+footer{
+    grid-area: f;
+    border: 1px solid gray;
+    background-color: lightpink;
+}
+nav{
+    grid-area: n;
+    border: 1px solid gray;
+    max-width: 200px;
+    background-color: lightgreen;
+}
